@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Plus+Jakarta+Sans:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#f8f9ff;}body{overscroll-behavior:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "primary-fixed-dim": "#6bd8cb", "on-tertiary-container": "#fdfcff", "secondary-fixed": "#dae2fd", "background": "#f8f9ff", "on-secondary": "#ffffff", "primary": "#00685f", "surface": "#f8f9ff", "on-surface-variant": "#3d4947", "on-tertiary-fixed-variant": "#004b73", "surface-bright": "#f8f9ff", "secondary-container": "#dae2fd", "surface-container-highest": "#d3e4fe", "error-container": "#ffdad6", "outline": "#6d7a77", "tertiary-fixed": "#cce5ff", "surface-container-high": "#dce9ff", "on-background": "#0b1c30", "on-secondary-container": "#5c647a", "on-error-container": "#93000a", "surface-variant": "#d3e4fe", "on-secondary-fixed": "#131b2e", "on-primary-fixed": "#00201d", "inverse-on-surface": "#eaf1ff", "surface-container-low": "#eff4ff", "surface-container": "#e5eeff", "tertiary-fixed-dim": "#93ccff", "tertiary-container": "#007bb9", "secondary-fixed-dim": "#bec6e0", "secondary": "#565e74", "error": "#ba1a1a", "on-error": "#ffffff", "primary-fixed": "#89f5e7", "on-primary": "#ffffff", "outline-variant": "#bcc9c6", "surface-container-lowest": "#ffffff", "inverse-primary": "#6bd8cb", "on-tertiary": "#ffffff", "surface-tint": "#006a61", "on-tertiary-fixed": "#001d31", "primary-container": "#008378", "on-surface": "#0b1c30", "tertiary": "#006194", "surface-dim": "#cbdbf5", "on-secondary-fixed-variant": "#3f465c", "on-primary-container": "#f4fffc", "inverse-surface": "#213145", "on-primary-fixed-variant": "#005049" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-lg": "1.5rem", "margin": "1.5rem", "space-xl": "2rem", "gutter": "1rem", "margin-mobile": "1rem", "space-xs": "0.25rem", "gutter-mobile": "0.75rem", "space-sm": "0.5rem", "space-md": "1rem" }, "fontFamily": { "headline-lg-mobile": ["Plus Jakarta Sans"], "label-md": ["Inter"], "headline-md": ["Plus Jakarta Sans"], "label-sm": ["Inter"], "headline-lg": ["Plus Jakarta Sans"], "body-md": ["Inter"], "display-lg": ["Plus Jakarta Sans"], "tabular-data": ["Inter"], "headline-sm": ["Plus Jakarta Sans"], "body-lg": ["Inter"], "body-sm": ["Inter"] }, "fontSize": { "headline-lg-mobile": ["20px", {"lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600"}], "label-md": ["13px", {"lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "600"}], "headline-md": ["18px", {"lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600"}], "label-sm": ["11px", {"lineHeight": "14px", "letterSpacing": "0.02em", "fontWeight": "600"}], "headline-lg": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600"}], "body-md": ["14px", {"lineHeight": "20px", "fontWeight": "400"}], "display-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}], "tabular-data": ["13px", {"lineHeight": "16px", "letterSpacing": "0", "fontWeight": "500"}], "headline-sm": ["16px", {"lineHeight": "22px", "fontWeight": "600"}], "body-lg": ["16px", {"lineHeight": "24px", "fontWeight": "400"}], "body-sm": ["12px", {"lineHeight": "18px", "fontWeight": "400"}] } } } }</script></head><body class="bg-surface text-on-surface font-body-md text-body-md min-h-screen flex flex-col antialiased selection:bg-primary-fixed selection:text-on-primary-fixed"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(11,28,48,0.04)]"><div class="h-16 px-margin-mobile flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="DentaCare Pro Logo" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1Vyn641eYNn8myrWCPA5iNe9rR5k-THjp8M8QU7N3-ghIbWA4czQ1pMtm2x1yy97FjmvJbH4u9V_E6wxjOACwfil4kgSfjX6p025vZKH2rgjToudIh2HrR84tkMfgSWpe_gcEKYDEA5pSgEX8d1DLohWwgkw_IpCY5Kql-f1JIYd_aVRpucaBo14fTZmu488WltXi8B-FhUS-dLxVcPcBJw-ILTeg6S7PHr13izdVUKmA"/><div class="flex flex-col min-w-0"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-primary tracking-tight truncate">DentaCare Pro</span><span class="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0"></span></div><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-outline text-[14px]">location_on</span><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Sede Central - S1</span><span class="material-symbols-outlined text-outline text-[12px]">expand_more</span></div></div></div><div class="flex items-center gap-space-sm flex-shrink-0"><div class="text-right hidden sm:flex flex-col"><span class="font-label-md text-label-md text-on-surface leading-none">Odontograma</span><span class="font-label-sm text-label-sm text-primary">En consulta</span></div><button aria-label="Perfil Profesional" class="w-11 h-11 flex items-center justify-center rounded-full bg-surface-container-low hover:bg-surface-container transition-colors focus:outline-none" type="button"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhDs6oFYxmm05PqWUawyX5nxTxf8lhhrhYx6vNWhkndNU5tlJ83CDMbEdTRRQjEduc_M4EWqks_XxXYp7zwJ_AykyN8JzDgMrc17x4LzDtcRHhcjZu1_Yv370QLtpRBU8Q-jDmqJPlttiCNNh6iXBGR246fglBKHbUdem4ilkcDYsrizqY_1cg9OD2rDgB8d8acOJ3kr-RdhXgpOcinKryq3DHR1cp-FPJmfTPtFld"/></button></div></div></header><main class="flex flex-col relative w-full pt-16 pb-28 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Patient Header Card -->
+<div class="px-margin-mobile pt-space-sm pb-space-sm">
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="relative flex-shrink-0">
+<img class="w-12 h-12 rounded-full object-cover shadow-sm" data-alt="Close up warm clinical portrait of a 34-year-old Latina woman named Sofia with friendly smile and natural lighting in modern daylight studio with soft teal reflections" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzFzePR-WQEyvDONLPxrZygWplFKQoJ6Kgyj2GqDObZwiGQS5Jcdr3fTCfyQmKkFLpoODLzKm6l4WGslNd-TjQR_bU1MTjxLX_Q6tKPYfq4_ZTwk5xYYhN2rHLRNEHcvWXX1GjwJosrZs9lUpE1QT5zCVe0hDBPH3Qfy6o2u8Dxn8v3aL5EUuLBR1zb8CKuoRnJHCsoIaONXPABSNj5QyeWOQU7hH-QKB7hSS36j6V"/>
+<span class="absolute bottom-0 right-0 w-3.5 h-3.5 rounded-full bg-primary-fixed-dim ring-2 ring-surface-container-lowest flex items-center justify-center">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-space-xs">
+<h1 class="font-headline-sm text-headline-sm text-on-surface truncate">Sofía Alarcón Morales</h1>
+<span class="material-symbols-outlined text-primary text-[18px]">verified</span>
+</div>
+<div class="flex items-center gap-space-sm font-body-sm text-body-sm text-on-surface-variant flex-wrap">
+<span>34 años</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container text-on-surface">O+</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="text-primary font-label-sm text-label-sm">HC #94022</span>
+</div>
+</div>
+</div>
+<button aria-label="Llamar o contactar" class="w-9 h-9 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface-variant flex items-center justify-center transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">phone_in_talk</span>
+</button>
+</div>
+<!-- Critical Medical Warning Alert -->
+<div class="bg-error-container/70 rounded-lg p-space-sm flex items-center gap-space-sm">
+<div class="w-7 h-7 rounded-full bg-error text-on-error flex items-center justify-center flex-shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[16px]">warning</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-error-container uppercase tracking-wide">Alerta Clínica Severa</span>
+<span class="font-headline-sm text-[13px] leading-tight text-on-error-container truncate font-bold">ALERGIA A LA PENICILINA & DERIVADOS</span>
+</div>
+<span class="material-symbols-outlined text-on-error-container/70 text-[18px] ml-auto">info</span>
+</div>
+</div>
+</div>
+<!-- Internal Navigation Subtabs -->
+<div class="px-margin-mobile pb-space-xs">
+<div class="flex gap-space-xs overflow-x-auto scrollbar-none py-1">
+<button data-chart-tab="odontogram" class="flex items-center gap-1.5 px-space-md py-2 rounded-full bg-primary text-on-primary font-label-md text-label-md shadow-sm flex-shrink-0 whitespace-nowrap" type="button">
+<span class="material-symbols-outlined text-[18px]">dentistry</span>
+<span>Odontograma</span>
+</button>
+<button data-chart-tab="history" class="flex items-center gap-1.5 px-space-md py-2 rounded-full bg-surface-container-lowest text-on-surface-variant hover:text-on-surface font-label-md text-label-md flex-shrink-0 whitespace-nowrap transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">history_edu</span>
+<span>Historial Clínico</span>
+</button>
+<button data-chart-tab="radiographs" class="flex items-center gap-1.5 px-space-md py-2 rounded-full bg-surface-container-lowest text-on-surface-variant hover:text-on-surface font-label-md text-label-md flex-shrink-0 whitespace-nowrap transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">perm_media</span>
+<span>Radiografías (6)</span>
+</button>
+<button data-chart-tab="budgets" class="flex items-center gap-1.5 px-space-md py-2 rounded-full bg-surface-container-lowest text-on-surface-variant hover:text-on-surface font-label-md text-label-md flex-shrink-0 whitespace-nowrap transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">request_quote</span>
+<span>Presupuestos</span>
+</button>
+</div>
+</div>
+<!-- Odontogram Interactive Console -->
+<div id="chartOdontogram" class="px-margin-mobile py-space-xs flex flex-col gap-space-sm">
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-md">
+<!-- Title & Arch Switch -->
+<div class="flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-wider">Topografía Dental</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Odontograma Adulto FDI</h2>
+</div>
+<div id="dentitionSwitch" class="inline-flex p-0.5 rounded-full bg-surface-container-low text-on-surface-variant text-[11px] font-semibold">
+<button class="px-2.5 py-1 rounded-full bg-surface-container-lowest text-primary shadow-xs" type="button">Permanente</button>
+<button class="px-2.5 py-1 rounded-full text-on-surface-variant/70" type="button">Temporal</button>
+</div>
+</div>
+<!-- Visual Diagnostic Legend Chips -->
+<div class="flex flex-wrap items-center gap-space-xs p-2.5 bg-surface-container-low rounded-lg">
+<div class="flex items-center gap-1 px-2 py-0.5 rounded bg-surface-container-lowest text-[11px] text-on-surface-variant">
+<span class="w-2.5 h-2.5 rounded-sm bg-surface-container-high"></span>
+<span>Sana</span>
+</div>
+<div class="flex items-center gap-1 px-2 py-0.5 rounded bg-surface-container-lowest text-[11px] text-on-surface-variant">
+<span class="w-2.5 h-2.5 rounded-sm bg-red-500"></span>
+<span>Caries</span>
+</div>
+<div class="flex items-center gap-1 px-2 py-0.5 rounded bg-surface-container-lowest text-[11px] text-on-surface-variant">
+<span class="w-2.5 h-2.5 rounded-sm bg-blue-500"></span>
+<span>Resina</span>
+</div>
+<div class="flex items-center gap-1 px-2 py-0.5 rounded bg-surface-container-lowest text-[11px] text-on-surface-variant">
+<span class="w-2.5 h-2.5 rounded-sm bg-amber-500"></span>
+<span>Endodoncia</span>
+</div>
+<div class="flex items-center gap-1 px-2 py-0.5 rounded bg-surface-container-lowest text-[11px] text-on-surface-variant">
+<span class="w-2.5 h-2.5 rounded-sm bg-emerald-500"></span>
+<span>Corona</span>
+</div>
+<div class="flex items-center gap-1 px-2 py-0.5 rounded bg-surface-container-lowest text-[11px] text-on-surface-variant">
+<span class="material-symbols-outlined text-outline text-[12px]">close</span>
+<span>Extracción</span>
+</div>
+</div>
+<!-- Upper Arch Strip (Maxilar Superior 18 - 28) -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm text-primary">Cuadrante 1 (18-11)</span>
+<span class="font-label-sm text-label-sm text-primary">Cuadrante 2 (21-28)</span>
+</div>
+<div class="overflow-x-auto pb-1 scrollbar-none">
+<div class="flex items-center gap-1.5 min-w-max px-0.5 py-1">
+<!-- 18 -->
+<button class="tooth-selector w-11 flex flex-col items-center p-1 rounded-lg bg-surface-container-low hover:bg-surface-container transition-all" type="button">
+<span class="font-label-sm text-[10px] text-on-surface-variant">18</span>
+<svg class="w-7 h-7 my-1" viewbox="0 0 32 32">
+<rect fill="#ffffff" height="28" rx="4" width="28" x="2" y="2"></rect>
+<polygon fill="#e5eeff" points="2,2 30,2 23,9 9,9"></polygon>
+<polygon fill="#d3e4fe" points="30,2 30,30 23,23 23,9"></polygon>
+<polygon fill="#e5eeff" points="30,30 2,30 9,23 23,23"></polygon>
+<polygon fill="#d3e4fe" points="2,30 2,2 9,9 9,23"></polygon>
+<rect fill="#eff4ff" height="14" width="14" x="9" y="9"></rect>
+</svg>
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+</button>
+<!-- 17 -->
+<button class="tooth-selector w-11 flex flex-col items-center p-1 rounded-lg bg-surface-container-low hover:bg-surface-container transition-all" type="button">
+<span class="font-label-sm text-[10px] text-on-surface-variant">17</span>
+<svg class="w-7 h-7 my-1" viewbox="0 0 32 32">
+<rect fill="#ffffff" height="28" rx="4" width="28" x="2" y="2"></rect>
+<polygon fill="#e5eeff" points="2,2 30,2 23,9 9,9"></polygon>
+<polygon fill="#3B82F6" points="30,2 30,30 23,23 23,9"></polygon>
+<polygon fill="#e5eeff" points="30,30 2,30 9,23 23,23"></polygon>
+<polygon fill="#d3e4fe" points="2,30 2,2 9,9 9,23"></polygon>
+<rect fill="#3B82F6" height="14" width="14" x="9" y="9"></rect>
+</svg>
+<span class="w-1.5 h-1.5 rounded-full bg-blue-500"></span>
+</button>
+<!-- 16 (SELECTED & ACTIVE) -->
+<button class="tooth-selector w-12 flex flex-col items-center p-1 rounded-lg bg-primary-fixed text-on-primary-fixed shadow-md ring-2 ring-primary scale-105 transition-all" type="button">
+<span class="font-label-md text-[11px] font-bold text-primary">16</span>
+<svg class="w-8 h-8 my-1 drop-shadow-sm" viewbox="0 0 32 32">
+<rect fill="#ffffff" height="28" rx="4" width="28" x="2" y="2"></rect>
+<polygon fill="#F59E0B" points="2,2 30,2 23,9 9,9"></polygon>
+<polygon fill="#F59E0B" points="30,2 30,30 23,23 23,9"></polygon>
+<polygon fill="#FDE68A" points="30,30 2,30 9,23 23,23"></polygon>
+<polygon fill="#F59E0B" points="2,30 2,2 9,9 9,23"></polygon>
+<rect fill="#EF4444" height="14" width="14" x="9" y="9"></rect>
+<circle cx="16" cy="16" fill="#ffffff" r="3"></circle>
+</svg>
+<span class="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></span>
+</button>
+<!-- 15 -->
+<button class="tooth-selector w-11 flex flex-col items-center p-1 rounded-lg bg-surface-container-low hover:bg-surface-container transition-all" type="button">
+<span class="font-label-sm text-[10px] text-on-surface-variant">15</span>
+<svg class="w-7 h-7 my-1" viewbox="0 0 32 32">
+<rect fill="#ffffff" height="28" rx="4" width="28" x="2" y="2"></rect>
+<polygon fill="#e5eeff" points="2,2 30,2 23,9 9,9"></polygon>
+<polygon fill="#e5eeff" points="30,2 30,30 23,23 23,9"></polygon>
+<polygon fill="#e5eeff" points="30,30 2,30 9,23 23,23"></polygon>
+<polygon fill="#e5eeff" points="2,30 2,2 9,9 9,23"></polygon>
+<rect fill="#eff4ff" height="14" width="14" x="9" y="9"></rect>
+</svg>
+<span class="w-1.5 h-1.5 rounded-full bg-surface-container-highest"></span>
+</button>
+<!-- 14 -->
+<button class="tooth-selector w-11 flex flex-col items-center p-1 rounded-lg bg-surface-container-low hover:bg-surface-container transition-all" type="button">
+<span class="font-label-sm text-[10px] text-on-surface-variant">14</span>
+<svg class="w-7 h-7 my-1" viewbox="0 0 32 32">
+<rect fill="#ffffff" height="28" rx="4" width="28" x="2" y="2"></rect>
+<polygon fill="#e5eeff" points="2,2 30,2 23,9 9,9"></polygon>
+<polygon fill="#e5eeff" points="30,2 30,30 23,23 23,9"></polygon>
+<polygon fill="#EF4444" points="30,30 2,30 9,23 23,23"></polygon>
+<polygon fill="#e5eeff" points="2,30 2,2 9,9 9,23"></polygon>
+<rect fill="#EF4444" height="14" width="14" x="9" y="9"></rect>
+</svg>
+<span class="w-1.5 h-1.5 rounded-full bg-red-500"></span>
+</button>
+<!-- 13 -->
+<button class="tooth-selector w-11 flex flex-col items-center p-1 rounded-lg bg-surface-container-low hover:bg-surface-container transition-all" type="button">
+<span class="font-label-sm text-[10px] text-on-surface-variant">13</span>
+<svg class="w-7 h-7 my-1" viewbox="0 0 32 32">
+<rect fill="#ffffff" height="28" rx="4" width="28" x="2" y="2"></rect>
+<polygon fill="#e5eeff" points="2,2 30,2 23,9 9,9"></polygon>
+<polygon fill="#e5eeff" points="30,2 30,30 23,23 23,9"></polygon>
+<polygon fill="#e5eeff" points="30,30 2,30 9,23 23,23"></polygon>
+<polygon fill="#e5eeff" points="2,30 2,2 9,9 9,23"></polygon>
+<rect fill="#eff4ff" height="14" width="14" x="9" y="9"></rect>
+</svg>
+<span class="w-1.5 h-1.5 rounded-full bg-surface-container-highest"></span>
+</button>
+<!-- Divider Midline -->
+<div class="h-9 w-0.5 bg-outline-variant mx-1 rounded-full opacity-60"></div>
+<!-- 21 -->
+<button class="tooth-selector w-11 flex flex-col items-center p-1 rounded-lg bg-surface-container-low hover:bg-surface-container transition-all" type="button">
+<span class="font-label-sm text-[10px] text-on-surface-variant">21</span>
+<svg class="w-7 h-7 my-1" viewbox="0 0 32 32">
+<rect fill="#ffffff" height="28" rx="4" width="28" x="2" y="2"></rect>
+<polygon fill="#e5eeff" points="2,2 30,2 23,9 9,9"></polygon>
+<polygon fill="#e5eeff" points="30,2 30,30 23,23 23,9"></polygon>
+<polygon fill="#e5eeff" points="30,30 2,30 9,23 23,23"></polygon>
+<polygon fill="#e5eeff" points="2,30 2,2 9,9 9,23"></polygon>
+<rect fill="#eff4ff" height="14" width="14" x="9" y="9"></rect>
+</svg>
+<span class="w-1.5 h-1.5 rounded-full bg-surface-container-highest"></span>
+</button>
+<!-- 22 -->
+<button class="tooth-selector w-11 flex flex-col items-center p-1 rounded-lg bg-surface-container-low hover:bg-surface-container transition-all" type="button">
+<span class="font-label-sm text-[10px] text-on-surface-variant">22</span>
+<svg class="w-7 h-7 my-1" viewbox="0 0 32 32">
+<rect fill="#ffffff" height="28" rx="4" width="28" x="2" y="2"></rect>
+<polygon fill="#e5eeff" points="2,2 30,2 23,9 9,9"></polygon>
+<polygon fill="#3B82F6" points="30,2 30,30 23,23 23,9"></polygon>
+<polygon fill="#e5eeff" points="30,30 2,30 9,23 23,23"></polygon>
+<polygon fill="#e5eeff" points="2,30 2,2 9,9 9,23"></polygon>
+<rect fill="#eff4ff" height="14" width="14" x="9" y="9"></rect>
+</svg>
+<span class="w-1.5 h-1.5 rounded-full bg-blue-500"></span>
+</button>
+<!-- 23 -->
+<button class="tooth-selector w-11 flex flex-col items-center p-1 rounded-lg bg-surface-container-low hover:bg-surface-container transition-all" type="button">
+<span class="font-label-sm text-[10px] text-on-surface-variant">23</span>
+<svg class="w-7 h-7 my-1" viewbox="0 0 32 32">
+<rect fill="#ffffff" height="28" rx="4" width="28" x="2" y="2"></rect>
+<polygon fill="#e5eeff" points="2,2 30,2 23,9 9,9"></polygon>
+<polygon fill="#e5eeff" points="30,2 30,30 23,23 23,9"></polygon>
+<polygon fill="#e5eeff" points="30,30 2,30 9,23 23,23"></polygon>
+<polygon fill="#e5eeff" points="2,30 2,2 9,9 9,23"></polygon>
+<rect fill="#eff4ff" height="14" width="14" x="9" y="9"></rect>
+</svg>
+<span class="w-1.5 h-1.5 rounded-full bg-surface-container-highest"></span>
+</button>
+<!-- 24 -->
+<button class="tooth-selector w-11 flex flex-col items-center p-1 rounded-lg bg-surface-container-low hover:bg-surface-container transition-all" type="button">
+<span class="font-label-sm text-[10px] text-on-surface-variant">24</span>
+<svg class="w-7 h-7 my-1" viewbox="0 0 32 32">
+<rect fill="#ffffff" height="28" rx="4" width="28" x="2" y="2"></rect>
+<line stroke="#6d7a77" stroke-width="2.5" x1="4" x2="28" y1="4" y2="28"></line>
+<line stroke="#6d7a77" stroke-width="2.5" x1="28" x2="4" y1="4" y2="28"></line>
+</svg>
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+</button>
+</div>
+</div>
+</div>
+<!-- Lower Arch Strip (Mandibular Inferior 48 - 38) Preview Mini -->
+<div class="flex flex-col gap-1.5 pt-1">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm text-on-secondary-container">Cuadrante 4 (48-41)</span>
+<span class="font-label-sm text-label-sm text-on-secondary-container">Cuadrante 3 (31-38)</span>
+</div>
+<div class="overflow-x-auto pb-1 scrollbar-none">
+<div class="flex items-center gap-1.5 min-w-max px-0.5 py-1 opacity-90">
+<!-- 46 -->
+<button class="tooth-selector w-11 flex flex-col items-center p-1 rounded-lg bg-surface-container-low hover:bg-surface-container" type="button">
+<span class="font-label-sm text-[10px] text-on-surface-variant">46</span>
+<svg class="w-7 h-7 my-1" viewbox="0 0 32 32">
+<rect fill="#ffffff" height="28" rx="4" width="28" x="2" y="2"></rect>
+<polygon fill="#3B82F6" points="2,2 30,2 23,9 9,9"></polygon>
+<polygon fill="#e5eeff" points="30,2 30,30 23,23 23,9"></polygon>
+<polygon fill="#e5eeff" points="30,30 2,30 9,23 23,23"></polygon>
+<polygon fill="#e5eeff" points="2,30 2,2 9,9 9,23"></polygon>
+<rect fill="#3B82F6" height="14" width="14" x="9" y="9"></rect>
+</svg>
+<span class="w-1.5 h-1.5 rounded-full bg-blue-500"></span>
+</button>
+<!-- 45 -->
+<button class="tooth-selector w-11 flex flex-col items-center p-1 rounded-lg bg-surface-container-low hover:bg-surface-container" type="button">
+<span class="font-label-sm text-[10px] text-on-surface-variant">45</span>
+<svg class="w-7 h-7 my-1" viewbox="0 0 32 32">
+<rect fill="#ffffff" height="28" rx="4" width="28" x="2" y="2"></rect>
+<polygon fill="#e5eeff" points="2,2 30,2 23,9 9,9"></polygon>
+<polygon fill="#e5eeff" points="30,2 30,30 23,23 23,9"></polygon>
+<polygon fill="#e5eeff" points="30,30 2,30 9,23 23,23"></polygon>
+<polygon fill="#e5eeff" points="2,30 2,2 9,9 9,23"></polygon>
+<rect fill="#eff4ff" height="14" width="14" x="9" y="9"></rect>
+</svg>
+<span class="w-1.5 h-1.5 rounded-full bg-surface-container-highest"></span>
+</button>
+<!-- 36 -->
+<button class="tooth-selector w-11 flex flex-col items-center p-1 rounded-lg bg-surface-container-low hover:bg-surface-container" type="button">
+<span class="font-label-sm text-[10px] text-on-surface-variant">36</span>
+<svg class="w-7 h-7 my-1" viewbox="0 0 32 32">
+<rect fill="#ffffff" height="28" rx="4" width="28" x="2" y="2"></rect>
+<polygon fill="#10B981" points="2,2 30,2 23,9 9,9"></polygon>
+<polygon fill="#10B981" points="30,2 30,30 23,23 23,9"></polygon>
+<polygon fill="#10B981" points="30,30 2,30 9,23 23,23"></polygon>
+<polygon fill="#10B981" points="2,30 2,2 9,9 9,23"></polygon>
+<rect fill="#10B981" height="14" width="14" x="9" y="9"></rect>
+</svg>
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+</button>
+<!-- 37 -->
+<button class="tooth-selector w-11 flex flex-col items-center p-1 rounded-lg bg-surface-container-low hover:bg-surface-container" type="button">
+<span class="font-label-sm text-[10px] text-on-surface-variant">37</span>
+<svg class="w-7 h-7 my-1" viewbox="0 0 32 32">
+<rect fill="#ffffff" height="28" rx="4" width="28" x="2" y="2"></rect>
+<polygon fill="#e5eeff" points="2,2 30,2 23,9 9,9"></polygon>
+<polygon fill="#e5eeff" points="30,2 30,30 23,23 23,9"></polygon>
+<polygon fill="#e5eeff" points="30,30 2,30 9,23 23,23"></polygon>
+<polygon fill="#e5eeff" points="2,30 2,2 9,9 9,23"></polygon>
+<rect fill="#eff4ff" height="14" width="14" x="9" y="9"></rect>
+</svg>
+<span class="w-1.5 h-1.5 rounded-full bg-surface-container-highest"></span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Focused Tooth Detail Panel (Pieza 16) -->
+<div id="chartToothDetail" class="px-margin-mobile py-space-xs">
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm relative overflow-hidden">
+<div class="absolute top-0 left-0 h-1 w-full bg-gradient-to-r from-amber-500 via-primary to-primary-container"></div>
+<div class="flex items-start justify-between gap-space-sm pt-1">
+<div class="flex items-center gap-space-sm">
+<div id="selectedToothNumber" class="w-11 h-11 rounded-lg bg-amber-50 text-amber-700 flex items-center justify-center font-headline-sm text-headline-sm font-bold shadow-xs">
+            16
+          </div>
+<div>
+<div class="flex items-center gap-space-xs">
+<h3 id="selectedToothTitle" class="font-headline-sm text-headline-sm text-on-surface">Primer Molar Superior Derecho</h3>
+</div>
+<p id="selectedToothDescription" class="font-body-sm text-body-sm text-on-surface-variant">FDI #16 · 3 Raíces / 4 Conductos (MV1, MV2, DV, P)</p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-amber-100 text-amber-900 font-semibold whitespace-nowrap">
+          Endodoncia: Sesión 2
+        </span>
+</div>
+<!-- Tooth Surface Quick Diagnostics Summary -->
+<div class="grid grid-cols-2 gap-space-xs pt-1">
+<div class="p-2.5 rounded-lg bg-surface-container-low flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-amber-500"></span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-[11px] text-on-surface-variant">Cámara Pulpar</span>
+<span class="font-label-md text-label-md text-on-surface truncate">Biopulpectomía iniciada</span>
+</div>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container-low flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-red-500"></span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-[11px] text-on-surface-variant">Caras Oclusal / Distal</span>
+<span class="font-label-md text-label-md text-on-surface truncate">Caries D3 con filtración</span>
+</div>
+</div>
+</div>
+<!-- Chairside Tooth Quick Action Bar -->
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<div class="grid grid-cols-2 gap-space-xs">
+<button class="flex items-center justify-center gap-1.5 py-2.5 px-space-sm rounded-lg bg-primary-container text-on-primary font-label-md text-label-md hover:opacity-95 active:scale-98 transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+<span>+ Registrar Hallazgo</span>
+</button>
+<button class="flex items-center justify-center gap-1.5 py-2.5 px-space-sm rounded-lg bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-primary text-[18px]">radiology</span>
+<span>Ver Rx Periapical</span>
+</button>
+</div>
+<button class="flex items-center justify-center gap-1.5 py-2 px-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant font-label-sm text-label-sm transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">post_add</span>
+<span>Añadir nota de evolución para Pieza 16</span>
+</button>
+<div id="chartUpdates" class="flex flex-col gap-1"></div>
+</div>
+</div>
+</div>
+<!-- Radiographic Periapical Visual Proof Card -->
+<div id="chartRadiograph" class="px-margin-mobile py-space-xs">
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex items-center gap-space-md">
+<div class="w-20 h-20 rounded-lg overflow-hidden flex-shrink-0 relative bg-on-background">
+<img class="w-full h-full object-cover opacity-90 hover:scale-105 transition-transform" data-alt="Digital dental periapical intraoral radiograph film showing maxillary first molar with endodontic rotary files measuring working length, clear bone trabeculae and root canals on high contrast grayscale medical display" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyUjlEUO137h6CLAb6uEolZGBl34uWvZ08sd5SR2fTCIi84z3AluV8i-tcAV1gIuBXLIOsbRqVgeV0-9NEATX7sMPoccutNIXFkRFUgOvRDlQqmOFXg-fXMFRMM7c_Rl3XuuoE6ZVreV6voPstk6bzEg1gZ-8qUMWPxdHkBhCKf5crYJjU3nxmU5mDigS2LZYsqRdWyHA0mrsQ2mLs8oJunKi0qTh_Leyjw1CQRqJr"/>
+<span class="absolute bottom-1 right-1 px-1 rounded bg-black/75 text-white text-[9px] font-mono">Rx 15/02</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-[13px] font-bold text-on-surface">Conductometría confirmada</span>
+<span class="material-symbols-outlined text-primary text-[16px]">check_circle</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 line-clamp-2">Longitud de trabajo: Palatino 21.5mm, MV1 20mm, MV2 19.5mm, DV 20mm con localizador apical Woodpecker.</p>
+<button class="flex items-center gap-2 mt-1.5 font-label-sm text-[11px] text-tertiary" type="button">
+<span class="material-symbols-outlined text-[14px]">zoom_in</span>
+<span class="underline">Expandir visor radiológico DICOM</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Clinical Evolution Timeline Section -->
+<div id="chartHistory" class="px-margin-mobile py-space-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">clinical_notes</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Evolución de Tratamientos</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">2 registros activos</span>
+</div>
+<!-- Timeline Entries -->
+<div class="flex flex-col gap-space-sm">
+<!-- Session 15 Feb 2025 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-xs relative">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-primary flex-shrink-0"></span>
+<span class="font-label-md text-label-md text-on-surface font-bold">15 Feb 2025 · 16:30 hrs</span>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-semibold">Sesión #2</span>
+</div>
+<div class="pl-3.5 flex flex-col gap-1.5 mt-1">
+<p class="font-body-md text-body-md text-on-surface leading-snug">
+            Instrumentación de conductos radiculares de la <strong class="text-primary font-semibold">pieza 16</strong> con limas rotatorias NiTi sistema WaveOne Gold. Irrigación profusa con Hipoclorito de Sodio al 5.25% activado por ultrasonido. Conductos secados con puntas de papel estériles y colocación de medicación intracanal con Hidróxido de Calcio purificado. Sellado coronal provisional con ionómero de vidrio tipo II.
+          </p>
+<div class="flex items-center justify-between pt-2">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-outline text-[16px]">account_circle</span>
+<span>Dra. Elena Rodríguez · Matr. Esp. 4810</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">lock</span> Firmado
+            </span>
+</div>
+</div>
+</div>
+<!-- Session 02 Feb 2025 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-xs relative opacity-90">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary flex-shrink-0"></span>
+<span class="font-label-md text-label-md text-on-surface font-bold">02 Feb 2025 · 11:15 hrs</span>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container text-on-secondary-container">Urgencia</span>
+</div>
+<div class="pl-3.5 flex flex-col gap-1.5 mt-1">
+<p class="font-body-md text-body-md text-on-surface leading-snug">
+            Paciente acude por dolor pulsátil agudo irradiado a zona temporal derecha. Diagnóstico: Pulpitis irreversible aguda sintomática en pieza 16. Se realizó anestesia troncular sin vasoconstrictor por reporte previo de taquicardia. Apertura cameral de urgencia, extirpación pulpar cameral y alivio oclusal selectivo.
+          </p>
+<div class="flex items-center justify-between pt-2">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-outline text-[16px]">account_circle</span>
+<span>Dr. Marcos Valdivia · Guardia Odontológica</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">lock</span> Firmado
+            </span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Primary Sticky Action Console -->
+<div class="px-margin-mobile pt-space-xs pb-space-lg flex flex-col gap-space-xs">
+<button class="w-full h-12 rounded-xl bg-primary text-on-primary font-headline-sm text-headline-sm flex items-center justify-center gap-2 shadow-md hover:bg-primary-container active:scale-[0.99] transition-all" id="saveRecordBtn" type="button">
+<span class="material-symbols-outlined text-[20px]">save</span>
+<span>Guardar Evolución y Actualizar Odontograma</span>
+</button>
+<div class="flex items-center justify-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm py-1">
+<span class="material-symbols-outlined text-primary text-[14px]">cloud_sync</span>
+<span>Sincronizado en tiempo real con el servidor clínico de S1</span>
+</div>
+</div>
+</div>
+<script src="app.js"></script></main><div class="fixed bottom-24 right-4 z-40"><button aria-label="Nueva Cita Express" class="w-14 h-14 rounded-full bg-primary text-on-primary shadow-[0_8px_20px_rgba(0,104,95,0.35)] flex items-center justify-center hover:bg-primary-container active:scale-95 transition-all focus:outline-none" type="button"><span class="material-symbols-outlined text-[28px]">add</span></button></div><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(11,28,48,0.05)]" data-active-classes="text-primary font-bold"><div class="flex justify-around items-center h-16 px-space-xs"><a class="flex flex-col items-center justify-center gap-0.5 min-w-[64px] h-12 text-on-surface-variant hover:text-primary transition-colors focus:outline-none" data-path="agenda" href="#"><span class="material-symbols-outlined text-[22px]">calendar_today</span><span class="font-label-sm text-label-sm tracking-tight">Agenda</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[64px] h-12 text-on-surface-variant hover:text-primary transition-colors focus:outline-none" data-path="pacientes" href="#"><span class="material-symbols-outlined text-[22px]">group</span><span class="font-label-sm text-label-sm tracking-tight">Pacientes</span></a><a aria-current="page" class="flex flex-col items-center justify-center gap-0.5 min-w-[64px] h-12 transition-colors focus:outline-none text-primary font-bold" data-path="odontograma" href="#"><span class="material-symbols-outlined text-[22px]">dentistry</span><span class="font-label-sm text-label-sm tracking-tight">Odontograma</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[64px] h-12 text-on-surface-variant hover:text-primary transition-colors focus:outline-none" data-path="finanzas" href="#"><span class="material-symbols-outlined text-[22px]">payments</span><span class="font-label-sm text-label-sm tracking-tight">Finanzas</span></a></div></nav></body></html>

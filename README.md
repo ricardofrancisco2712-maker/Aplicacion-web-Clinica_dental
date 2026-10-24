@@ -8,27 +8,7 @@ Frontend	HTML, Tailwind CSS (CDN), JavaScript
 Backend	Node.js 20+, Express 5
 Base de datos	SQLite (better-sqlite3)
 Seguridad	JWT, contraseñas con bcryptjs, control de acceso por rol
-Estructura del proyecto
-├── backend/
-│   ├── src/
-│   │   ├── config/db.js           # conexión a SQLite y creación de tablas
-│   │   ├── middlewares/auth.js    # JWT y control de roles
-│   │   ├── controllers/           # lógica de cada módulo
-│   │   ├── routes/index.js        # definición de endpoints
-│   │   └── server.js              # arranque de Express + archivos estáticos
-│   ├── scripts/seed.js            # usuarios y pacientes de prueba
-│   ├── .env.example
-│   └── package.json
-├── database/
-│   └── schema.sql                 # definición de tablas
-├── frontend/
-│   ├── pages/                     # login, agenda, nueva-cita, odontograma
-│   ├── js/                        # api.js (cliente de la API) y app.js (interfaz)
-│   └── css/
-└── README.md
-Requisitos previos
-Node.js 20 o superior (incluye npm).
-Git.
+
 
 No hace falta instalar ningún servidor de base de datos: SQLite crea el archivo database/clinica.db automáticamente.
 

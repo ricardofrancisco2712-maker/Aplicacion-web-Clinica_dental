@@ -27,41 +27,29 @@ bash
 cd backend
 npm start
 
-Abre http://localhost:3000 en el navegador. Para desarrollo con recarga automática: npm run dev.
+# Base de datos local (SQLite)
 
-Usuarios de prueba
-Rol	Correo	Contraseña
-Administrador	admin@dentacare.com	Admin1234
-Dentista	dentista@dentacare.com	Dentista1234
-Recepción	recepcion@dentacare.com	Recepcion1234
+La aplicación utiliza SQLite: la base de datos se guarda en el archivo `data/dentacare.sqlite`, dentro de esta carpeta. No necesitas instalar ni configurar SQL Server, crear usuarios, contraseñas o abrir puertos. La aplicación crea la carpeta, el archivo y la tabla automáticamente al iniciarse.
 
-Son solo para pruebas. Cámbialas antes de usar la aplicación con datos reales.
+## Iniciar la aplicación
 
-Módulos implementados
-Login y gestión de usuarios: inicio de sesión con JWT, roles (admin, dentista, recepcion), alta/edición/desactivación de usuarios (solo admin).
-Pacientes: alta, búsqueda, edición y eliminación.
-Agenda y citas: crear cita (paciente, fecha, hora, duración, especialidad, sillón), listar por fecha, cancelar. Evita dos citas a la misma hora en el mismo sillón.
-Odontograma y finanzas: hallazgos y notas por pieza dental (FDI), presupuestos y pagos por paciente.
-Endpoints principales
+1. Instala Node.js 20 o una versión más reciente.
+2. Abre PowerShell en esta carpeta y ejecuta:
 
-Todas las rutas, salvo el login, requieren el encabezado Authorization: Bearer <token>.
+   ```powershell
+   npm install
+   npm start
+   ```
 
-Método	Ruta	Descripción	Roles
-POST	/api/auth/login	Iniciar sesión	público
-GET	/api/auth/me	Usuario actual	todos
-GET/POST	/api/usuarios	Listar / crear usuarios	admin
-PUT	/api/usuarios/:id	Editar / desactivar usuario	admin
-GET/POST	/api/pacientes	Listar (?q=) / crear	todos
-GET/PUT	/api/pacientes/:id	Ver / editar	todos
-DELETE	/api/pacientes/:id	Eliminar	admin
-GET/POST	/api/citas	Listar (?fecha=, ?desde=) / crear	todos
-PATCH	/api/citas/:id/estado	Cambiar estado (programada, en_sillon, finalizada, cancelada)	todos
-DELETE	/api/citas/:id	Eliminar cita	todos
-GET/POST	/api/registros	Hallazgos y notas clínicas	POST: admin, dentista
-GET	/api/finanzas	Presupuestos y pagos	todos
-POST	/api/finanzas/presupuestos	Crear presupuesto	admin, dentista, recepción
-POST	/api/finanzas/pagos	Registrar pago	admin, recepción
-Base de datos
+3. Abre `http://localhost:3000`. Para verificar que SQLite está abierta, visita `http://localhost:3000/api/health`.
+
+El archivo de la base de datos se conserva entre reinicios y no se sube a Git. Haz copias de seguridad de `data/dentacare.sqlite`; al cerrar la aplicación, SQLite también puede utilizar los archivos temporales `data/dentacare.sqlite-wal` y `data/dentacare.sqlite-shm`.
+
+Puedes cambiar la ubicación con `SQLITE_DATABASE_PATH` en `.env`. Una ruta relativa se interpreta desde la carpeta del proyecto.
+
+Si el navegador tiene datos guardados bajo la clave `dentacare-demo-v1`, se copian al archivo SQLite la primera vez que se inicia con la base vacía. La copia del navegador solo se elimina después de confirmar el guardado.
+
+> SQLite guarda los datos en esta máquina. Para compartirlos entre usuarios en distintas computadoras o publicar la aplicación en Render, necesitarás una base de datos alojada y accesible por el servidor.
 
 Tablas: usuarios, pacientes, citas, registros_clinicos, presupuestos, pagos. El script completo está en database/schema.sql y se ejecuta automáticamente al iniciar el servidor.
 
